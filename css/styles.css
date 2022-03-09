@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Fredoka+One&family=Itim&family=Josefin+Sans:wght@100&family=Luckiest+Guy&family=Patrick+Hand&family=Permanent+Marker&family=Poppins:wght@300;500&display=swap');
+
+/*Determinar cómo hacer los estilos*/
+
+body{
+    /*background-color: beige;*/
+    background-image: url(../img/fondo3.jpg);
+    background-size: 1300px;
+}
+h1 {color: rgb(212, 14, 179);
+    font-size: 15pt; 
+    font-family: 'Shizuru', cursive;
+    font-style: normal;
+    text-align: center;}
+
+h2 {color: rgb(8, 1, 7);
+    font-style: oblique; 
+    font-weight:bold;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Anton', sans-serif;
+}
+
+    p{color: hsl(207, 46%, 10%);font-family: 'Anton', sans-serif;
+        font-family: 'Caveat', cursive; text-align: justify;}
+        span{font-weight: lighter;font-size: 8pt;}
+    
+        header{text-align: center;}
+p {
+    text-align: justify;
+    font-family: 'Redressed', cursive;
+    color: hsl(120, 74%, 9%); /*matiz, saturación, luminosidad*/
+}
+
+img {
+    height: 35px;
+    width: 35px;
+}
+
+/*li {
+    font-family: 'Architects Daughter', cursive;
+    text-transform: capitalize;
+    list-style-image: url(../img/nube.ico) ;
+}*/
+li {
+    list-style: none;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: capitalize;
+  }
+  li::before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-image: url(../img/nube.ico);
+  }
+
+
+ul {
+    /*list-style-image: url(../img/nube.ico) ;*/
+    list-style-position: inside;
+}
+
+table {
+    width: 800px;
+    /*border-width: 4px;
+    border-style: dotted;*/
+    border: 4px groove green;
+}
+
+table th {
+    background-color: cornflowerblue;
+    height: 50px;
+    border: 4px solid rebeccapurple;
+}
+
+table td {
+    text-align: center;
+}
+
+a {
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link {
+    color: aquamarine;
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(13, 127, 194);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #48E5E7;
+}
+
+.amarillo{
+    color: rgb(17, 109, 121);
+}
+
+.fuxia{
+    color: fuchsia;
+    background: black;
+}
+
+.rosa{
+    color: rgb(212, 14, 179);
+}
+
+.destacar{
+    color: black;
+    font-weight: bold;
+
+}
+
+#caja{
+    background-color: floralwhite;
+    font-size: 300;
+}
+
+.cajaprueba{
+    width: 800px;
+    background-color: #15AC85;
+    color: white;
+    /*margin-top: 100px;
+    margin-right: 40px;
+    margin-bottom: 50PX;
+    margin-left: 70px;
+    margin: 100px 40px 50px 70px;*/
+    margin: 50px auto;
+    /*border-width: 3px;
+    border-color: #ffbf00;
+    border-style: dashed;*/
+    border: 5px dashed #ffbf00;
+    border-right: 5px solid #ffbf00;
+    border-left: 5px dashed firebrick;
+    border-bottom: 5px dashed firebrick;
+
+    /*padding-top:20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;*/
+
+    padding: 20px 30px 20px 30px; /*para dar espacios dentro de nuestra caja*/
+}
+
+.letraejercicio{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+}
+.parrafo{
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+   text-align: justify;
+   font-weight:lighter;
+   /*padding: 0px 250px 0px 250px;*/
+
+}
+
+.cajaejercicio{
+    width: 700px;
+    height: 280px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 30px 20px 20px 20px;
+    border: 5px dashed #15AC85;
+}
+
+.imgejercicio{
+    width: 130px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.sailor-moon{
+    width: 600px;
+    background: rgba(184, 66, 111, 0.2); /*transparencia con el canala alpha*/
+    box-shadow: 3px 3px 10px #000000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.sailor-moon h1{
+    color: aliceblue;
+    font-size: 36px;
+    text-shadow: 3px 3px 10px #000000;
+}
+
+.sailor-moon img{
+    width: 280px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #5a1348;
+    margin-right: 5px;
+}

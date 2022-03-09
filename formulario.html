@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Forms" author="Gissel D">
+    <title>Formulario</title>
+    <link type="image/x-icon" href="img/bx-folder.svg" rel="icon">
+    <!--<img src="img/bx-folder.svg">-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<!--bgcolor="#DAF7A6">-->
+
+<body background="./img/fondo2.jpg">
+    <header>
+        <center>
+            <h1><strong><em>Formulario</em></strong></h1>
+        </center>
+    </header>
+    <!--method get: muestra la información en la dirección de la página-->
+    <!--method post: no muestra los datos en la dirección sino de forma incriptada-->
+    <form name="Form" action="https://www.youtube.com/" method="post" target="_self" autocomplete="autocomplete"
+        novalidate align="center">
+        <label for="Form">Nombre Usuario: </label>
+        <!--Etiqueta informativa, para que el usuario entienda qué es lo que yo quiero pedir-->
+        <!--atributo for: genera interacción con la etiqueta input.-->
+        <input name="nombre" id="nombre" type="text" required placeholder="Ingresar nombre"><br><br>
+        <!--Control type: password-->
+        <label for="Form">Password: </label>
+        <input name="password" id="password" type="password" placeholder="Ingresar contraseña"><br><br>
+        <!--Control type: radio-->
+        <label for="ecivil">Ingrese su estado civil</label><br><br>
+        <input name="ecivil" id="ecivil" type="radio"> Soltero
+        <input name="ecivil" id="ecivil" type="radio"> Divorciado(a)
+        <input name="ecivil" id="ecivil" type="radio"> En una relación<br><br>
+        <!--Control type: checkbox-->
+        <label for="deporte">¿Qué le gusta hacer en su tiempo libre?</label><br><br>
+        <input name="deporte" id="deporte" type="checkbox" checked> Fútbol
+        <input name="deporte" id="deporte" type="checkbox" checked> Baloncesto
+        <input name="deporte" id="deporte" type="checkbox" checked> Natación
+        <input name="deporte" id="deporte" type="checkbox" checked> Voleibol<br><br>
+        <!--Control type: number-->
+        <label for="edad">Ingresa tu edad: </label>
+        <input name="edad" id="edad" type="number" placeholder="Ingresar edad"><br><br>
+        <!--Control type: select-->
+        <label for="ciudad">¿En qué ciudad vives?</label><br><br>
+        <select name="ciudad">
+            <option value="0" selected>Elige una ciudad</option>
+            <option value="1">Bogotá</option>
+            <option value="2">Chía</option>
+            <option value="3">Villao</option>
+        </select><br><br>
+        <!--Control type: ordenada-->
+        <label for="ciudad">¿En qué ciudad vives?</label><br><br>
+        <select name="ciudad" id="ciudad"><br>
+            <option value="0" selected>Elige una ciudad</option>
+            <optgroup label="Cundinamarca">
+                <option value="1">Bogotá</option>
+                <option value="2">Chía</option>
+                <option value="3">Soacha</option>
+            </optgroup>
+            <optgroup label="Antioquia">
+                <option value="4">Medellín</option>
+                <option value="5">Envigado</option>
+            </optgroup>
+            <optgroup label="Valle del Cauca">
+                <option value="6">Cali</option>
+                <option value="7">Buga</option>
+            </optgroup>
+            <optgroup label="Santander">
+                <option value="8">Bucaramanga</option>
+                <option value="9">Florida Blanca</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <input type="hidden" name="dato_oculto">
+        <br>
+        <!--Control type: file-->
+        <label for="file">Sube aquí tu archivo: </label><br><br>
+        <input type="file" name="file" id="file" required>
+        <br><br>
+        <!--Control type: text tarea-->
+        <label for="observaciones">Observaciones: </label><br><br>
+        <textarea rows="5" cols="30" name="observaciones"></textarea>
+        <br><br>
+        <!--Control type: search-->
+        <label for="buscar">Digita el dato a buscar: </label>
+        <input type="search" id="buscar" name="buscar" placeholder="Buscar...">
+        <input type="submit" value="Ir">
+        <br><br>
+        <!--Control type: email-->
+        <label for="">Ingrese el correo electrónico: </label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="color1">Seleccione un color: </label>
+        <input type="color" id="color" name="color">
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <!--Button-->
+        <button type="submit">Guardar</button><br><br>
+
+        <!--Incluir información y dar estilos propios al texto-->
+        <label for="time">
+            <span>Horas </span>
+            <input type="time" name="time" id="time">
+        </label><br><br>
+
+        <label for="day">
+            <span>Día </span>
+            <input type="date" name="date" id="date">
+        </label><br><br>
+
+        <label for="week">
+            <span>Semana</span>
+            <input type="week" name="week" id="week">
+        </label><br><br>
+
+        <label for="month">
+            <span>Mes </span>
+            <input type="month" name="month" id="month">
+        </label><br><br>
+
+        <label>Califique su experiencia: </label>
+        <input type="range" min="1" max="100" step="2" value="1">
+    </form><br><br>
+
+    <footer>TechPower-Kuepa</footer>
+
+</body>
+
+</html>

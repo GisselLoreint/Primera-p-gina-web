@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+.titulo{
+    margin: 20px auto;
+}
+
+.titulo h1{
+    color: white;
+    text-shadow: 0px 0px 10px #ff0000;
+    font-size: 40px;
+    margin-left: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.titulo img{
+    width: 150px;
+}
+
+.contenido{
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.contenido h2{
+    font-family: 'Fredoka One', cursive;    
+}
+
+.contenido ul{
+    list-style-image: url(../img2/lunalista.png);
+}
+
+.personaje{
+    width: 800px;
+    background: linear-gradient(#f9a9fb, #f9d3fa);
+    margin: 30px 3px;
+    padding: 30px 30px;
+    box-shadow: 3px 3px 7px #999999;
+    font-family: 'Mulish', sans-serif;
+}
+
+.personaje img{
+    width: 150px;
+    height: auto;
+    border: 7px solid #ffffff;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.personaje h2{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.contenido p{
+    text-align: justify;
+}
+
+.boton{
+    width: 100px;
+    text-align: center;
+    background-color:#ff0000;
+    color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.boton a{
+    margin: 20px 0px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.boton:hover{
+    background-color: #0000ff;
+    transition-property:background-color;
+    transition-delay: 3s;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+.titulo img{
+    transform: translateX(700px);
+    transition: transform 10s linear 3s;
+}
+
+.titulo h1{
+    transform: translateY(-55px);
+    transition: transform 10s linear 4s;
+}
+
+.personaje img:hover{
+    transform: rotate(-60deg) scale(1.5);
+    transition: transform 3s;
+    /*transition-duration: 5s;*/
+}
+
+.cajaprincipal{
+    width: 270px;
+    height: 350px;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 0px 20px #000000;
+    overflow: hidden;
+}
+
+.encabezado{
+    background: white;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    padding: 20px 0;
+}
+
+.cajaperfil{
+    width: 540px;
+}
+
+.cajaperfil:hover{
+    transform: translateX(-265px);
+    transition: transform 2s;
+}
+
+.foto{
+    width: 260px;
+    text-align: center;
+    margin: 20px 0;
+    float: left;
+}
+
+.foto img{
+    width: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.header2{
+    color: white;
+}
+
+.header2 img{
+    width: 150px;
+}
+.centrar{
+    text-align: center;
+}

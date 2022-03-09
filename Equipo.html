@@ -2,8 +2,9 @@
 <html lang="es-Es">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> <!--Etquite para lectura de carácteres especiales-->
     <title> Mi primera página web</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -14,8 +15,98 @@
     <h4>Título 4</h4>
 
 <a href="index.html">
-<img src="img/bx-home.svg"> Home
+<img src="img/bx-home.svg"> home
 </a>
+
+<table border="1">
+    <caption>Agenda semanal</caption>
+
+    <tr> <!--<tr>: son las columnas-->
+     <th>Hora</th> <!--<th> Son los encabezados de las tablas-->
+     <th>Lunes</th>
+     <th>Martes</th>  
+    </tr>       
+    <tr>
+        <td>7:00 am</td> <!--<td>: celdas o filas de la tabla-->
+        <td colspan="2">Desayuno</td> <!--Colspan: une dos o varias celdas-->
+        
+    </tr>
+        <td>8:00 am</td>
+        <td>Reunión</td>
+        <td>Clase</td>
+    <tr>
+
+    </tr>
+
+</table><br>
+
+<table border="1">
+    <caption>Agenda semanal</caption>
+
+    <tr> <!--<tr>: son las columnas-->
+     <th>Hora</th> <!--<th> Son los encabezados de las tablas-->
+     <th>Lunes</th>
+     <th>Martes</th>  
+    </tr>       
+    <tr>
+        <td>7:00 am</td>
+        <td rowspan="2">Reunión Jefe</td>
+        <td>Clase</td>        
+    </tr>
+        
+    <tr>
+        <td>8:00 am</td>
+        
+        <td>Clase</td>
+    </tr>
+
+</table><br>
+
+<table border="1">
+    <caption>Tech power</caption>
+
+    <tr> 
+     <th>Nombre</th> 
+     <th>Curso</th>
+     <th>Edad</th>  
+     <th>2021</th>
+     <th>2022</th>
+    </tr>       
+    <tr>
+        <th>David Vega</th>
+        <td rowspan="2">TechPower1</td>
+        <td rowspan="4"><center>30</center></td>   
+        <td colspan="2"><center>si</center></td>
+    </tr>
+        
+    <tr>
+        <th>Tatiana Cabrera</th>
+        
+       
+        <td><center>si</center></td>
+        <td><center>no</center></td>
+    </tr>
+
+    <tr>
+        <th>Juliana Correal</th>
+        <td rowspan="2">TechPower 2</td>
+        
+        <td><center>si</center></td>
+        <td><center>no</center></td>    
+    </tr>
+
+    <tr>
+        <th>Jennifer Fajardo</th>
+
+        
+        <td colspan="2"><center>no</center></td>
+    </tr>
+
+</table>
+
+
+
+
 
 </body>
 
